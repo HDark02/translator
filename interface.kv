@@ -1,0 +1,105 @@
+MDScreen:
+    name: "main"
+    enter_text : enter_text
+    output : output
+    lang_in:lang_in
+    lang_out: lang_out
+    MDFloatLayout:
+        md_bg_color: 0,0, 0, .8
+        MDLabel:
+            text: "Translator"
+            theme_text_color: "Custom"
+            text_color: "white"
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .95}
+            font_size: "35sp"
+            bold: True
+        Card_of_text:
+            id: enter_text
+            pos_hint: {"center_x": .5, "center_y": .75}
+        Card_of_text:
+            id: output
+            pos_hint: {"center_x": .5, "center_y": .3}
+        Lang_1:
+            id: lang_in
+            pos_hint: {"center_x": .25, "center_y": .53}
+        Lang_1:
+            id: lang_out
+            pos_hint: {"center_x": .75, "center_y": .53}
+        MDIconButton:
+            icon: "rotate-3d-variant"
+            pos_hint: {"center_x": .5, "center_y": .53}
+            md_bg_color: "#ff4c8fff"
+            icon_size: "35sp"
+            theme_text_color: "Custom"
+            icon_color: "white"
+            on_release: lang_in.lang_print.text, lang_out.lang_print.text = lang_out.lang_print.text, lang_in.lang_print.text
+
+        MDRaisedButton:
+            text: "Translate"
+            pos_hint: {"center_x": .5, "center_y": .07}
+            size_hint: .5, .08
+            halgn: "center"
+            mode: "round"
+            elevation: 5
+            font_size: "25sp"
+            md_bg_color: "#ff4c8fff"
+            on_release: app.translate(enter_text.text_enter.text, lang_in.lang_print.text, lang_out.lang_print.text)
+
+<Card_of_text@MDFloatLayout>:
+    size_hint: .8, .3
+    radius: [20, ]
+    text_enter:text_enter
+    MDCard:
+        pos_hint: {"center_x": .5, "center_y": .5}
+        padding: "15sp"
+        elevation: 5
+        md_bg_color:  1, 1, 1, .25
+        radius: [20, ]
+        MDFloatLayout:
+            MDTextField:
+                id: text_enter
+                pos_hint: {"center_x": .5, "center_y": .5}
+                font_size: "18sp"
+                size_hint: 1, 1
+                theme_text_color: "Custom"
+                mode: "fill"
+                multiline: True
+                fill_color_focus: 1, 1, 1, 0
+                fill_color_normal: 1, 1, 1, 0
+                text: "good mord"
+                text_color_focus: "white"
+                text_color_normal: "white"
+                line_color_focus: 1, 1, 1, 0
+                line_color_normal: 1, 1, 1, 0
+            MDIconButton:
+                md_bg_color: .7, .5, 0, 1
+                theme_text_color: "Custom"
+                icon_color: "white"
+                icon: "clipboard-multiple-outline"
+                pos_hint: {"center_x": .9, "center_y": .1}
+                on_release: app.copy_text(text_enter.text)
+<Lang_1@MDCard>:
+    size_hint: .3, .07
+    radius: [20, ]
+    md_bg_color: 1, 1, 1, .25
+    elevation: 4
+    lang_list_id:lang_list_id
+    lang_print: lang_print
+    MDFloatLayout:
+        MDTextButton:
+            id: lang_print
+            text: "Afrikaans"
+            pos_hint: {"center_x": .4, "center_y": .5}
+            font_size: "15sp"
+            theme_text_color: "Custom"
+            text_color: "white"
+        Spinner:
+            id: lang_list_id
+            text: "Afrikaans"
+            radius: [20, ]
+            values: []
+            opacity: 0
+            pos_hint: {"center_x": .5, "center_y": .5}
+            on_release: lang_print.text = lang_list_id.text
+            
