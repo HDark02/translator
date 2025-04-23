@@ -16,7 +16,7 @@ This is a lightweight and elegant translation app built using **KivyMD** and **P
 
 ## 📸 Preview
 ![App Interface](https://github.com/HDark02/translator/blob/main/modele-vecteur-interface-smartphone-logiciel-traducteur-disposition-conception-couleur-page-application-mobile-ecran-traduction-texte-interface-utilisateur-plate-pour-appli.avif)
-
+🎬 [Voir la démo vidéo] (https://github.com/HDark02/translator/blob/main/bandicam%202025-04-23%2020-43-35-755.mp4)
 
 
 ## 🛠️ Tech Stack
