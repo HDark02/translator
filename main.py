@@ -35,4 +35,5 @@ class MainApp(MDApp) :
     def copy_text(self, text):
         print(text)
         pass
-MainApp().run()
+if __name__== "__main__":
+    MainApp().run()
