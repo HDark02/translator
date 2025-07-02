@@ -43,7 +43,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0, kivymd==1.1.1, sdl2_ttf==2.0.15, pillow, translate==3.6.1, gTTS==2.5.3
+requirements = python3,kivy==2.1.0, kivymd==1.1.1, sdl2_ttf==2.0.15, pillow, translate==3.6.1, gTTS==2.5.3, android, jnius
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -104,23 +104,22 @@ android.presplash_color = white
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions.html for all the supported syntaxes and properties)
 #android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
-android.permissions = INTERNET
+android.permissions = INTERNET, ACCESS_NETWORK_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 31
+android.api = 33
 
 # (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+android.sdk = 33
 
 # (str) Android NDK version to use
-#android.ndk = 23b
-
+android.ndk = 25b
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
 
