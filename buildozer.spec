@@ -9,7 +9,7 @@
 title = Translator
 
 # (str) Package name
-package.name = output_apk
+package.name = Translator_apk
 
 
 # (str) Package domain (needed for android/ios packaging)
