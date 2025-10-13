@@ -8,7 +8,7 @@ source.include_exts = py,kv,png,jpg,ttf,mp3,ogg,wav,txt
 version = 1.0
 
 # Dépendances Python nécessaires
-requirements = python3,kivy,kivymd,translate,requests,httpx
+requirements = python3,kivy==2.1,kivymd==1.1.1,translate,requests,httpx
 
 # Orientation et affichage
 orientation = portrait
