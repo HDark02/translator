@@ -18,7 +18,7 @@ package.domain = org.media
 source.dir = .
 
 # (list) Source files to include (leave empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,txt,ico,jpeg
+source.include_exts = py,png,jpg,kv,atlas,txt,ico,jpeg,
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -42,17 +42,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0, kivymd==1.1.1, sdl2_ttf==2.0.15, pillow, plyer==2.1.0, pyjnius, requests
+requirements = python3,kivy==2.1.0, kivymd==1.1.1, sdl2_ttf==2.0.15, pillow, plyer==2.1.0,  translate
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = vcf_image.png
+presplash.filename = icon.png
 
 # (str) Icon of the application
-icon.filename = vcf_image.png
+icon.filename = icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -104,7 +104,7 @@ android.presplash_color = white
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions.html for all the supported syntaxes and properties)
 #android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
