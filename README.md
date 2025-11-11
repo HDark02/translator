@@ -1,8 +1,6 @@
-Here's a clean and professional `README.md` for your translation app project, based on your `main.py` file:
-
 ---
 
-# 🌍 Simple Translator App
+# 🌍 Super Translator App
 
 **“When you're bored, you write code.”**  
 This is a lightweight and elegant translation app built using **KivyMD** and **Python**, designed for speed, simplicity, and a modern user experience.
