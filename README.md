@@ -60,7 +60,8 @@ This is a lightweight and elegant translation app built using **KivyMD** and **P
 - Add text-to-speech playback
 - Enable copy-to-clipboard functionality
 - Add dark/light theme switching
-
+## Get the install the last release version
+- Translator (https://www.dropbox.com/scl/fi/452udwu61ynuqi1mhv8px/TranslatorInstaller.exe?rlkey=vvep7ysni6sedgi9u9214a24p&st=2js341pu&dl=0)
 ## 📄 License
 
 MIT License. Feel free to use, modify, and share.
