@@ -1,5 +1,3 @@
----
-
 # 🌍 Super Translator App
 
 **“When you're bored, you write code.”**  
