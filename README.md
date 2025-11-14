@@ -12,7 +12,7 @@ This is a lightweight and elegant translation app built using **KivyMD** and **P
 
 ## 📸 Preview
 ![App Interface](https://github.com/HDark02/translator/blob/main/modele-vecteur-interface-smartphone-logiciel-traducteur-disposition-conception-couleur-page-application-mobile-ecran-traduction-texte-interface-utilisateur-plate-pour-appli.avif)
-🎬 [Voir la démo vidéo] (https://github.com/HDark02/translator/blob/main/bandicam%202025-04-23%2020-43-35-755.mp4)
+🎬 [Voir la démo] <a href="https://github.com/HDark02/translator/blob/main/bandicam%202025-04-23%2020-43-35-755.mp4" download>vidéo</a>
 
 
 ## 🛠️ Tech Stack
@@ -57,7 +57,7 @@ This is a lightweight and elegant translation app built using **KivyMD** and **P
 - Enable copy-to-clipboard functionality
 - Add dark/light theme switching
 ## Get the install the last release version
-- Translator (https://www.dropbox.com/scl/fi/452udwu61ynuqi1mhv8px/TranslatorInstaller.exe?rlkey=vvep7ysni6sedgi9u9214a24p&st=2js341pu&dl=0)
+- Translator <a href="https://www.dropbox.com/scl/fi/452udwu61ynuqi1mhv8px/TranslatorInstaller.exe?rlkey=vvep7ysni6sedgi9u9214a24p&st=2js341pu&dl=0" download>Release</a>
 ## 📄 License
 
 MIT License. Feel free to use, modify, and share.
