@@ -15,9 +15,11 @@ MDScreen:
             font_size: "35sp"
             bold: True
         Card_of_text:
+            hint_text_text: "Tap your text here"
             id: enter_text
             pos_hint: {"center_x": .5, "center_y": .75}
         Card_of_text:
+            hint_text_text: ""
             id: output
             pos_hint: {"center_x": .5, "center_y": .3}
         Lang_1:
@@ -50,6 +52,7 @@ MDScreen:
     size_hint: .8, .3
     radius: [20, ]
     text_enter:text_enter
+    hint_text_text: ""
     MDCard:
         pos_hint: {"center_x": .5, "center_y": .5}
         padding: "15sp"
@@ -65,9 +68,11 @@ MDScreen:
                 theme_text_color: "Custom"
                 mode: "fill"
                 multiline: True
+                hint_text: root.hint_text_text
+                hint_text_color_normal: "white"
+                hint_text_color_focus: 1, 1, 1, 0
                 fill_color_focus: 1, 1, 1, 0
                 fill_color_normal: 1, 1, 1, 0
-                text: "good mord"
                 text_color_focus: "white"
                 text_color_normal: "white"
                 line_color_focus: 1, 1, 1, 0
@@ -78,7 +83,9 @@ MDScreen:
                 icon_color: "white"
                 icon: "clipboard-multiple-outline"
                 pos_hint: {"center_x": .9, "center_y": .1}
-                on_release: app.copy_text(text_enter.text)
+                on_release:
+                    print(text_enter.text)
+                    app.copy_text(text_enter.text)
 <Lang_1@MDCard>:
     size_hint: .3, .07
     radius: [20, ]
@@ -101,5 +108,3 @@ MDScreen:
             values: []
             opacity: 0
             pos_hint: {"center_x": .5, "center_y": .5}
-            
-            
